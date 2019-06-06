@@ -1,4 +1,33 @@
-var cards = ["queen", "queen", "king", "king"];
+var cards =[
+
+{
+rank: "queen",
+suit: "hearts",
+cardImage: "images/queen-of-hearts.png"
+},
+
+{
+rank: "queen",
+suit: "diamonds",
+cardImage: "images/queen-of-diamonds.png"
+},
+
+{
+rank: "king",
+suit: "hearts",
+cardImage: "images/king-of-hearts.png"
+},
+
+{
+rank: "king",
+suit: "diamonds",
+cardImage: "images/queen-of-hearts.png"
+},
+];
+
+
+
+
 var cardsInPlay = [ ];
 
 function checkForMatch() {
@@ -9,10 +38,32 @@ if (cardsInPlay[0] === cardsInPlay[1]) {
 }
 }
 function flipCard(cardId){
-		console.log("User flipped " + cards[cardId]);
-		cardsInPlay.push(cards[cardId]);
+		console.log("User flipped " + cards[cardId].rank);
+		cardsInPlay.push(cards[cardId].rank);
+		console.log(cards[cardId].cardImage);
+		console.log(cards[cardId].suit);
 		
 }
 flipCard(0);
 flipCard(2);
 checkForMatch();
+
+
+
+var products = [
+  {
+    name: "chair",
+    inventory: 5,
+    unit_price: 45.99
+  },
+  {
+    name: "table",
+    inventory: 10,
+    unit_price: 123.75
+  },
+  {
+    name: "sofa",
+    inventory: 2,
+    unit_price: 399.50
+  }
+];
