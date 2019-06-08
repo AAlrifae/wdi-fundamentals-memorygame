@@ -21,7 +21,7 @@ cardImage: "images/king-of-hearts.png"
 {
 rank: "king",
 suit: "diamonds",
-cardImage: "images/queen-of-hearts.png"
+cardImage: "images/king-of-diamonds.png"
 },
 ];
 
